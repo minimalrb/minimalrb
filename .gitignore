@@ -1,0 +1,6 @@
+.bundle
+db/*.sqlite3*
+*.swp
+*~
+.DS_Store
+*.sass-cache
