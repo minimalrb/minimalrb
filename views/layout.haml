@@ -2,15 +2,15 @@
 %html{:lang => "en", :manifest => "/app.manifest"}
 	%head
 		%meta{:charset => 'utf-8'}
-		%title Site title
-		%meta{ :author => 'description', :content => 'Lorem Ipsum'}
+		%title minimalRB | Minimalistic Sinatra framework with Sprockets, Sass and Haml
+		%meta{ :author => 'description', :content => 'Minimalistic Sinatra framework with Sprockets, Sass and Haml'}
 		%meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1.0'}
 		%link{:rel => "stylesheet", :type => "text/css", :href => "/assets/application.css"}
 		%script{:src => 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'}
 		%script{:src => '/assets/application.js'}
 	%body
 		%header{:id => 'header'}
-			%h1 Site heading
+			%h1 minimalRB
 		=yield
 		%footer{:id => 'footer'}
-			%small Copyright 2011
+			%small Created by <a href="http://nordahl.me">Kenneth D. Nordahl</a>
