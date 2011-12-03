@@ -9,8 +9,8 @@
 		%script{:src => 'https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'}
 		%script{:src => '/assets/application.js'}
 	%body
-		%header{:id => 'header'}
+		%header#header
 			%h1 Site heading
 		=yield
-		%footer{:id => 'footer'}
+		%footer#footer
 			%small Copyright 2011
