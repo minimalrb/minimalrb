@@ -1,2 +1,39 @@
-%section.clearfix
-	
+%article
+  %p
+    Minimalistic <a href="http://sinatrarb.com/">Sinatra</a> framework with <a href="getsprockets.org/">Sprockets</a>, <a href="http://sass-lang.com/">Sass</a> & <a href="http://haml-lang.com/">Haml</a>.
+  %h2 How to
+  %ol
+    %li 
+      <a href="https://github.com/KDN/minimalrb/zipball/master">download</a> and cd into the app
+    %li 
+      $ bundle install
+    %li
+      $ gem install foreman
+    %li
+      $ foreman start
+    %li
+      edit the files
+  %h2 Releases
+  %ul
+    %li
+      <a href="http://github.com/KDN/minimalrb/tags">v0.0.2 - Structural changes ++</a>
+      %ul
+        %li Moved /views/ to /app/views/
+        %li Added modernizr
+        %li Seperated the routes into the config folder
+        %li Added content_for helpers
+        %li Added CSS tools like clearfix, display:none, image replace, ++
+    %li
+      <a href="http://github.com/KDN/minimalrb/tags">v0.0.1 - First release</a>
+  %h2 Todo
+  %ol
+    %li
+      Fix manifest bugs
+    %li
+      Add DB options
+    %li
+      Logo
+    %li
+      Website
+%a#github{:href => "http://github.com/KDN/minimalrb"}
+  %img{:alt => "Fork me on GitHub", :src => "https://assets2.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71?repo=&url=http%3A%2F%2Fs3.amazonaws.com%2Fgithub%2Fribbons%2Fforkme_right_darkblue_121621.png&path=", :style => "position: fixed; top: 0; right: 0; border: 0;"}
