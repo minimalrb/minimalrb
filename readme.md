@@ -1,6 +1,6 @@
 # Minimalrb
 
-Minimalistic Sinatra based framework with sprockets for asset handling, Sass and Haml.
+Minimalistic webapp framework based on Sinatra with sprockets for asset handling, Sass and Haml.
 
 # How to
 
@@ -12,17 +12,16 @@ Minimalistic Sinatra based framework with sprockets for asset handling, Sass and
 
 # Releases
 
+* v0.0.2 - Structural changes ++
 * v0.0.1 - Initial release
 
 
 # Todo
 
 1. Fix manifest bugs
-2. Move routes to it's own file
-3. Add a configuration
-4. Add DB options
-5. Logo
-6. Website
+2. Add DB options
+3. Logo
+4. Website
 
 # Credit
 
