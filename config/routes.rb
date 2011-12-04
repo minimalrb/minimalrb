@@ -1,3 +1,3 @@
 get '/', :provides => 'html' do
-	haml :index
+  haml :index
 end

@@ -5,20 +5,20 @@
 /[if IE 9 ] <html lang="en" class="no-js ie9">
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 %head
-	%meta{:charset => 'utf-8'}
-	%title Site title
-	%meta{ :author => 'description', :content => 'Lorem Ipsum'}
-	%meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1.0'}
-	%link{:rel => "stylesheet", :type => "text/css", :href => "/assets/application.css"}
-	%script{:src => 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'}
-	%script{:src => '/assets/application.js'}
+  %meta{:charset => 'utf-8'}
+  %title Site title
+  %meta{ :author => 'description', :content => 'Lorem Ipsum'}
+  %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1.0'}
+  %link{:rel => "stylesheet", :type => "text/css", :href => "/assets/application.css"}
+  %script{:src => 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'}
+  %script{:src => '/assets/application.js'}
 %body
-	%header#header
-		%h1 Site heading
-	=yield
-	%footer#footer
-		%small Copyright 2011
-	%script
+  %header#header
+    %h1 Site heading
+  =yield
+  %footer#footer
+    %small Copyright 2011
+  %script
     window.onload = function() {
     -# js onload
     #{ yield_content :js_onload }
