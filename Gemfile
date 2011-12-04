@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 # Framework
 gem 'sinatra'
+gem 'sinatra-content-for'
 # HTML rendring engine Haml
 gem 'haml'
 # CSS rendring engine Sass
