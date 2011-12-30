@@ -20,8 +20,7 @@ Minimalistic webapp framework based on Sinatra with sprockets for asset handling
 
 1. Fix manifest bugs
 2. Add DB options
-3. Logo
-4. Website
+3. Website
 
 # Credit
 
