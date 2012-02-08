@@ -1,21 +1,22 @@
-assets = Sprockets::Environment.new(root_path) do |env|
+$assets = assets = Sprockets::Environment.new(root_path) do |env|
   env.logger = Logger.new(STDOUT)
 end
 
-assets.append_path(File.join(root_path, 'app', 'assets'))
-assets.append_path(File.join(root_path, 'app', 'assets', 'fonts'))
-assets.append_path(File.join(root_path, 'app', 'assets', 'images'))
-assets.append_path(File.join(root_path, 'app', 'assets', 'javascripts'))
-assets.append_path(File.join(root_path, 'app', 'assets', 'stylesheets'))
+%w[app lib vendor].each do |path|
+  %w[fonts images javascripts stylesheets].each do |asset_path|
+    assets.append_path(File.join(root_path, path, 'assets', asset_path))
+  end
+end
 
 module AssetHelpers
   def asset_path(name)
-    "/assets/#{name}"
+    "/assets/#{$assets.find_asset(name).digest_path}"
   end
 end
 
 assets.context_class.instance_eval do
   include AssetHelpers
+  helpers AssetHelpers
 end
 
 get '/assets/*' do
