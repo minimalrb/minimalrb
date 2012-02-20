@@ -10,6 +10,11 @@ gem 'sass'
 gem 'sprockets'
 # jQuery javascript framework
 gem 'coffee-script'
+# Markdown
+gem 'rdiscount'
+gem 'nokogiri'
+
+
 # JS runtime
 gem "execjs"
 gem "therubyracer"
