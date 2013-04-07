@@ -2,7 +2,7 @@ source :rubygems
 
 # Framework
 gem 'sinatra'
-gem 'sinatra-content-for'
+gem 'sinatra-contrib'
 
 # HTML rendring engine Haml
 gem 'haml'
